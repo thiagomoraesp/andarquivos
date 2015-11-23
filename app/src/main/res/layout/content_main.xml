@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="salvaressadelicia" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exibir"
+        android:id="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="exibir" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/radioGroup" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/inteiro"
+        android:layout_below="@+id/texto"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp"
+        android:layout_alignEnd="@+id/texto" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inteiro"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton android:id="@+id/preferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sp"/>
+            <!--android:onClick="onRadioButtonClicked"/>-->
+
+        <RadioButton android:id="@+id/interno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/is"/>
+            <!--android:onClick="onRadioButtonClicked"/>-->
+
+
+
+
+    </RadioGroup>
+
+
+
+
+</RelativeLayout>
